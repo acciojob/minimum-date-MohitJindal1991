@@ -10,7 +10,7 @@ function minDate(dates) {
 			min=i;
 		}
 	}
-	return dates[i];
+	return dates[min];
 }
 
 
