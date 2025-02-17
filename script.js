@@ -1,16 +1,16 @@
 function minDate(dates) {
   //write you code here
-	let datenow=new Date(dates[0]);
-	let min=0;
+   let datenow=new Date(dates[0]);
+	let minindex=0;
 
 	for(let i=1;i<dates.length;i++){
 		let newDate=new Date(dates[i]);
-		if(newDate<datenow){
+		if(datenow>newDate){
 			datenow=newDate;
-			min=i;
+			minindex=i;
 		}
 	}
-	return dates[min];
+	return dates[minindex];
 }
 
 
